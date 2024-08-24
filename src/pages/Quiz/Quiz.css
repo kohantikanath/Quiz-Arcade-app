@@ -1,4 +1,128 @@
 .quiz-page {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  color: aliceblue;
+}
+
+.quiz-page-head {
+  width: 100%;
+  padding: 2rem 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.quiz-page-head > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.progress-cont {
+  flex: 1;
+  background-color: aliceblue;
+  margin: 0 7rem;
+  border-radius: 0.5rem;
+  height: 0.1rem;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.progress-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: aliceblue;
+  border: 0.15rem solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  right: -0.5rem;
+  top: -50%;
+  transform: translateY(-35%);
+  transition: all 0.5s ease-out;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.quiz-page-cont {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-page-cont > h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.choices {
+  margin: 2rem 0;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.choice > input {
+  scale: 1.5;
+  accent-color: rgb(44, 167, 44);
+  cursor: pointer;
+}
+
+.choice > label {
+  font-size: 1.5rem;
+}
+
+.next-btn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4b39b5;
+  font-family: cursive;
+}
+
+.quiz-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quiz-last > h1 {
+  font-size: 3rem;
+}
+
+.quiz-score {
+  font-size: 1.2rem;
+}
+
+.quiz-msg {
+  font-size: 1.7rem;
 }

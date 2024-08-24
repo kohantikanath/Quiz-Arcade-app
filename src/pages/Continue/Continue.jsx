@@ -3,7 +3,11 @@ import "./Continue.css";
 
 import Letscontinue from "../../assets/lets-continue.png";
 
+import { useNavigate } from "react-router-dom";
+
 const Continue = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="continue">
       <div className="continue-l">
@@ -14,7 +18,9 @@ const Continue = () => {
         <p>
           Let's put your knowledge <br /> to the test!
         </p>
-        <button className="continue-btn">Continue</button>
+        <button className="continue-btn" onClick={() => navigate("/quiz")}>
+          Continue
+        </button>
       </div>
     </div>
   );

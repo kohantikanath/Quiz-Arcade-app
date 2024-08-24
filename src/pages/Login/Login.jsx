@@ -3,9 +3,12 @@ import "./Login.css";
 
 import Welcomebg from "../../assets/welcome-bg.png";
 
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -54,7 +57,12 @@ const Login = () => {
                 required
               />
             </div>
-            <input type="submit" value="Login" className="submit" />
+            <input
+              type="submit"
+              value="Login"
+              className="submit"
+              onClick={() => navigate("/home")}
+            />
           </form>
         </div>
       </div>
