@@ -1,0 +1,81 @@
+/* .quiz {
+    width: 100%;
+    height: 100%;
+}
+ */
+.tfquiz {
+  display: flex;
+  background: #7D85DF;
+  color: white;
+  padding: 90px;
+  /* border-radius: 10px; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tfquiz-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.tfquiz-header h1 {
+  font-size: 2em;
+  margin: 0;
+  font-family: cursive;
+}
+
+.tfquiz-l {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tfquiz-l img {
+  width: 400px;
+  height: auto;
+}
+
+.tfquiz-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tfquiz-r h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+
+.tfquiz-r p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.tf-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.true-btn, .false-btn {
+  background: linear-gradient(45deg, #7D85DF, #7D85DF);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: #7D85DF 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px 0;
+}
+
+.true-btn:hover, .false-btn:hover {
+  background: linear-gradient(45deg, #7D85DF, #7D85DF);
+  transform: translateY(-2px);
+}
