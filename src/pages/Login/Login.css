@@ -2,28 +2,38 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   background-color: #6300b7;
+  overflow-y: auto; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.welcome::-webkit-scrollbar {
+  display: none; 
 }
 
 .welcome-l {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .welcome-l > img {
-  height: 100%;
+  width: 95%;
+  height: auto;
   padding: 2rem;
 }
 
 .welcome-r {
-  flex: 1;
-  height: 100%;
-  padding: 2rem 5rem;
+  width: 100%;
+  padding: 2rem 1rem;
   font-family: cursive;
   color: aliceblue;
+  text-align: center;
 }
 
 .welcome-r > h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .login {
@@ -32,12 +42,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  /* background-color: antiquewhite; */
+  align-items: center;
 }
 
 .login > h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .login > p {
@@ -45,7 +54,7 @@
 }
 
 .login > form {
-  width: 70%;
+  width: 90%;
 }
 
 .form-group {
@@ -54,7 +63,6 @@
   flex-direction: column;
   margin: 1rem 0;
   gap: 0.5rem;
-  /* background-color: antiquewhite; */
 }
 
 .form-group > input {
@@ -79,3 +87,34 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .welcome {
+    flex-direction: row;
+    overflow-y: hidden; 
+  }
+
+  .welcome-l {
+    width: 50%;
+    height: 100%;
+  }
+
+  .welcome-r {
+    width: 50%;
+    padding: 2rem 5rem;
+    text-align: left;
+  }
+
+  .welcome-r > h1 {
+    font-size: 3rem;
+  }
+
+  .login > h2 {
+    font-size: 2rem;
+  }
+
+  .login > form {
+    width: 70%;
+  }
+}
+
